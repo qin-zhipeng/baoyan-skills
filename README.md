@@ -143,7 +143,7 @@ baoyan-skills/
 - **五个页签**：常用语 / 常用文件 / 客户名单 / 打标签 / 话术库；**发送永远由你自己点**
 - **数据不出本机**：不联网、不上传、无遥测；包里不含任何聊天记录、客户名单、密钥或账号信息
 
-完整介绍 → [docs/微信辅助器-一键版.md](docs/微信辅助器-一键版.md)；源码 → [wechat-assistant/](wechat-assistant/)；[安装包（约 31 MB）+ 20 秒宣传片（1080p）](https://github.com/qin-zhipeng/baoyan-skills/releases/tag/v1.1.0) → Releases v1.1.0。
+完整介绍 → [docs/微信辅助器-一键版.md](docs/微信辅助器-一键版.md)；源码 → [wechat-assistant/](wechat-assistant/)；下载 → [安装包（约 31 MB）](https://github.com/qin-zhipeng/baoyan-skills/releases/download/v1.1.0/WeChat-Assistant-OneKey-20261113.zip) · [20 秒宣传片（1080p）](https://github.com/qin-zhipeng/baoyan-skills/releases/download/v1.1.0/WeChat-Assistant-Promo-20261113.mp4) · [全部附件](https://github.com/qin-zhipeng/baoyan-skills/releases/tag/v1.1.0)。
 
 > 宣传片中的名单与数字为演示示意。工具读取微信本地数据库的方式可能不符合微信平台规则；随包第三方组件的再分发许可见 [THIRD-PARTY.md](wechat-assistant/THIRD-PARTY.md)，使用前请自行评估合规风险。
 

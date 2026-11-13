@@ -6,8 +6,8 @@
 
 | 你想要的 | 去哪里 |
 | --- | --- |
-| 解压即用的完整安装包（自带运行环境） | [Releases v1.1.0](https://github.com/qin-zhipeng/baoyan-skills/releases/tag/v1.1.0) 里的 `微信辅助器_一键版_20261113.zip` |
-| 20 秒宣传片 | 同一个 Release 里的 `微信辅助器_一键版_宣传片.mp4` |
+| 解压即用的完整安装包（自带运行环境） | [WeChat-Assistant-OneKey-20261113.zip](https://github.com/qin-zhipeng/baoyan-skills/releases/download/v1.1.0/WeChat-Assistant-OneKey-20261113.zip) |
+| 20 秒宣传片 | [WeChat-Assistant-Promo-20261113.mp4](https://github.com/qin-zhipeng/baoyan-skills/releases/download/v1.1.0/WeChat-Assistant-Promo-20261113.mp4) |
 | 完整介绍文案 | [docs/微信辅助器-一键版.md](../docs/微信辅助器-一键版.md) |
 | 功能说明 / 安装说明 / 插件开发 | [功能说明.md](功能说明.md) · [INSTALL.md](INSTALL.md) · [PLUGIN_GUIDE.md](PLUGIN_GUIDE.md) |
 
