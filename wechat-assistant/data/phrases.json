@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "cat_greet",
+      "name": "开场问候",
+      "color": "#e5484d",
+      "bookmark": false,
+      "order": 0
+    },
+    {
+      "id": "cat_faq",
+      "name": "常见问题",
+      "color": "#f5a524",
+      "bookmark": false,
+      "order": 1
+    },
+    {
+      "id": "cat_file",
+      "name": "资料发送",
+      "color": "#3b82f6",
+      "bookmark": false,
+      "order": 2
+    }
+  ],
+  "phrases": []
+}

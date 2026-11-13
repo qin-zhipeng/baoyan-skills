@@ -14,6 +14,8 @@
 | [`baoyan-planner-tables`](baoyan-planner-tables/) | 学员背景 → 原生 PPT 表格规划表（学员信息 + 冲稳保定档）；政策文件 → 11 模块政策解读 HTML | 「给学员出个保研规划表」「根据这份推免政策出个解读」 |
 | [`baoyan-deal-chat`](baoyan-deal-chat/) | 读本机微信聊天 → 每日聊单作战图（在跟线索 / 今日必做 Top 8 / 存量老客户 / 渠道剔除）、异议话术、成交复盘 | 「今天该先跟谁」「客户说太贵了怎么回」 |
 
+> 另附配套桌面工具：[**微信辅助器 · 一键版**](docs/微信辅助器-一键版.md) —— 本机微信聊天记录 → 今日跟进名单 / 潜在意向 / 成交话术归因；[安装包 + 20 秒宣传片](https://github.com/qin-zhipeng/baoyan-skills/releases/tag/v1.1.0) 在 Releases。
+
 ---
 
 ## 一、baoyan-planner-tables（保研规划师工作台）
@@ -98,7 +100,7 @@ python tools/validate_skills.py
 
 ```
 baoyan-skills/
-├── docs/                    # 产出截图 + 社交预览图
+├── docs/                    # 产出截图 + 社交预览图 + 微信辅助器介绍/预览
 ├── tools/validate_skills.py # 静态门禁（CI 与本地同一份）
 ├── .github/workflows/       # CI：ubuntu + windows 双跑校验
 ├── baoyan-planner-tables/   # 技能 1
@@ -107,13 +109,17 @@ baoyan-skills/
 │   ├── assets/              # 样例数据 + 模板占位
 │   ├── scripts/             # PPT 生成 / 政策 HTML / 政策抓取
 │   └── test-prompts.json
-└── baoyan-deal-chat/        # 技能 2
-    ├── SKILL.md
-    ├── INSTALL.md config.json
-    ├── references/          # 话术库 / 阶段关卡 / 决策人图谱 / 风险登记
-    ├── scripts/             # 每日流水线 / 实时捕获 / 成交复盘分析
-    ├── outbox/              # 产物目录（.gitignore 已排除产物）
-    └── test-prompts.json
+├── baoyan-deal-chat/        # 技能 2
+│   ├── SKILL.md
+│   ├── INSTALL.md config.json
+│   ├── references/          # 话术库 / 阶段关卡 / 决策人图谱 / 风险登记
+│   ├── scripts/             # 每日流水线 / 实时捕获 / 成交复盘分析
+│   ├── outbox/              # 产物目录（.gitignore 已排除产物）
+│   └── test-prompts.json
+└── wechat-assistant/        # 配套桌面工具源码（第三方二进制只随 Release 分发）
+    ├── app.py core/ ui/ plugins/
+    ├── README.md INSTALL.md 功能说明.md PLUGIN_GUIDE.md THIRD-PARTY.md
+    └── 一键安装.bat 等启动脚本
 ```
 
 ## 六、证据与边界
@@ -126,7 +132,22 @@ baoyan-skills/
 2. **不编数据**。院校层次、推免条件、分值名次一律以原文为准；查不到就说查不到。
 3. **不自动发送**。deal-chat 只出稿，发送由人操作。
 
-## 七、许可
+## 七、配套桌面工具：微信辅助器 · 一键版
+
+两个技能负责「AI 出稿」，这个 Windows 桌面小工具负责**本机执行端**：把本机微信聊天记录变成「今天该先找谁 / 谁还有意向 / 哪些话术真打赢过单子」。
+
+[![微信辅助器 · 客户名单页签](docs/wechat-assistant-preview.png)](docs/微信辅助器-一键版.md)
+
+- **解压即用**：自带 Python 3.13 + PySide6，完整解压 → 双击「一键安装.bat」→ 点开就用，不装环境、不联网
+- **一键更新跑完 6 步**：定位微信 → 取本机密钥 → 解密 SQLCipher 4 本地库 → 出跟进 / 意向名单 → 成交话术归因 → 自动填回软件
+- **五个页签**：常用语 / 常用文件 / 客户名单 / 打标签 / 话术库；**发送永远由你自己点**
+- **数据不出本机**：不联网、不上传、无遥测；包里不含任何聊天记录、客户名单、密钥或账号信息
+
+完整介绍 → [docs/微信辅助器-一键版.md](docs/微信辅助器-一键版.md)；源码 → [wechat-assistant/](wechat-assistant/)；[安装包（约 31 MB）+ 20 秒宣传片（1080p）](https://github.com/qin-zhipeng/baoyan-skills/releases/tag/v1.1.0) → Releases v1.1.0。
+
+> 宣传片中的名单与数字为演示示意。工具读取微信本地数据库的方式可能不符合微信平台规则；随包第三方组件的再分发许可见 [THIRD-PARTY.md](wechat-assistant/THIRD-PARTY.md)，使用前请自行评估合规风险。
+
+## 八、许可
 
 **MIT License** —— 可以自由使用、修改、二次分发，也可以商用，保留版权声明即可，见 [LICENSE](LICENSE)。
 

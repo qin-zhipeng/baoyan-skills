@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "hotkeys": {
+    "toggle_window": "Ctrl+Shift+Space",
+    "quick_search": "Ctrl+Shift+F",
+    "send_first": "Ctrl+Shift+Enter"
+  },
+  "sequences": [],
+  "send": {
+    "mode": "paste_enter",
+    "delay_ms": 120,
+    "enter_after_paste": true,
+    "restore_clipboard": true,
+    "restore_delay_ms": 900,
+    "split_segments": true,
+    "segment_separator": "|||",
+    "segment_delay_ms": 320,
+    "paste_delay_ms": 90
+  },
+  "window": {
+    "always_on_top": true,
+    "dock": false,
+    "dock_side": "right",
+    "dock_gap": 8,
+    "no_activate": false,
+    "x": 120,
+    "y": 120,
+    "w": 900,
+    "h": 620,
+    "opacity": 100
+  },
+  "general": {
+    "accent": "#e5484d",
+    "minimize_to_tray": true,
+    "autostart": false,
+    "confirm_variables": true
+  },
+  "plugins": {
+    "enabled": {},
+    "data": {}
+  }
+}

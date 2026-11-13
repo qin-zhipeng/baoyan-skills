@@ -1,0 +1,13 @@
+{
+  "_说明": "全部可选，留空即全自动。只有想手动修正识别结果时才填。",
+  "files": [],
+  "datasets": [],
+  "work_dir": "",
+  "deal_wxids": [],
+  "deal_names": [],
+  "refunded_wxids": [],
+  "internal_names": [],
+  "channel_labels": [],
+  "contacts_file": "",
+  "refresh_cmd": []
+}

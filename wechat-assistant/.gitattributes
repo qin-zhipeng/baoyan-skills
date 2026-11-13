@@ -1,0 +1,3 @@
+# 中文 Windows 控制台脚本为 GBK 编码，禁止 git 做换行/编码归一化
+*.bat -text
+*.vbs -text

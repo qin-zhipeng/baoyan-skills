@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "texts": [
+    {
+      "id": "demo_1",
+      "title": "打招呼",
+      "content": "您好，方便的话我先了解一下您的情况～",
+      "usage": 0,
+      "keywords": "",
+      "tags": []
+    },
+    {
+      "id": "demo_2",
+      "title": "稍后回复",
+      "content": "收到，我这边看一下，稍后给您回复。",
+      "usage": 0,
+      "keywords": "",
+      "tags": []
+    }
+  ],
+  "files": [],
+  "settings": {}
+}
